@@ -1,0 +1,29 @@
+input {
+    width: 4em;
+    text-align: center;
+}
+
+input.damage {
+    width: 2em;
+    text-align: center;
+}
+
+.chart {
+    width: 60%
+}
+
+.inline {
+    display: inline-block;
+}
+
+.left {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.right {
+    margin-left: 10px;
+    display: inline-block;
+    width: 68%;
+}

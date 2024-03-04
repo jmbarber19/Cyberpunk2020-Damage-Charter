@@ -1,0 +1,105 @@
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="file:///A:/Data/Programming/Javascript/CP2020-Damage-Charter/calculation.js"></script>
+    <link rel="stylesheet" href="file:///A:/Data/Programming/Javascript/CP2020-Damage-Charter/style.css"/>
+</head>
+
+<div class="left">
+    <input id="rangeChecker" value="50"/>
+    &nbsp;&nbsp;|||&nbsp;&nbsp;
+    <div class="inline">Close:</div>
+    <input readonly id="closeValue" value=""/>
+    &nbsp;&nbsp;|||&nbsp;&nbsp;
+    <div class="inline">Medium:</div>
+    <input readonly id="mediumValue" value=""/>
+    &nbsp;&nbsp;|||&nbsp;&nbsp;
+    <div class="inline">Long:</div>
+    <input readonly id="longValue" value=""/>
+    
+    <hr/>
+    
+    Attack: +
+    <input class="damage" id="attack" value="15"/>
+    
+    <br/>
+    
+    Damage:
+    <input class="damage" id="count" value="3"/>
+    d
+    <input class="damage" id="sides" value="6"/>
+    
+    <br/><br/>
+    
+    Shots:
+    <input class="damage" id="shots" value="5"/>
+    
+    <br/><br/>
+    
+    Attack Range:
+    <select name="range" id="range">
+        <option value="10">point blank</option>
+        <option value="15">close</option>
+        <option value="20">medium</option>
+        <option value="25">long</option>
+    </select> 
+    
+    <br/><br/>
+    <hr/>
+    <br/>
+    
+    BTM:
+    <input class="damage" id="btm" value="0"/>
+    
+    <br/><br/>
+    
+    <table>
+        <tr>
+            <th>Head</th>
+            <th>Torso</th>
+            <th>R.Arm</th>
+            <th>L.Arm</th>
+            <th>R.Leg</th>
+            <th>L.Leg</th>
+        </tr>
+        <tr>
+            <th>(1)</th>
+            <th>(2)</th>
+            <th>(3-4)</th>
+            <th>(5-6)</th>
+            <th>(7-8)</th>
+            <th>(9-10)</th>
+        </tr>
+        <tr>
+            <td><input id="head" value="0"/></td>
+            <td><input id="torso" value="0"/></td>
+            <td><input id="rightArm" value="0"/></td>
+            <td><input id="leftArm" value="0"/></td>
+            <td><input id="rightLeg" value="0"/></td>
+            <td><input id="leftLeg" value="0"/></td>
+        </tr>
+    </table>
+    
+    <input type="checkbox" id="simulate"/>
+    <label>simulate</label>
+    <br/>
+
+    <input type="checkbox" id="sortChart"/>
+    <label>sort chart</label>
+    <br/>
+
+    <button id="attackButton">Make Attack</button>
+    <button id="bulkButton">Bulk Attack</button>
+    
+</div>
+
+<div class="right">
+
+    <div class="chart">
+        <canvas id="myChart"></canvas>
+    </div>
+      
+
+</div>
+
+<div id="result">
+</div>
